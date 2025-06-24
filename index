@@ -1,0 +1,136 @@
+ 
+Copy
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo Incrível</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #00ffcc;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #181818;
+        }
+
+        .intro {
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .botao-jogar {
+            padding: 15px 30px;
+            background-color: #00ffcc;
+            color: #000;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .botao-jogar:hover {
+            background-color: #00ccbb;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jogo Incrível</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#jogar">Jogar</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro" id="sobre">
+            <h2>Bem-vindo ao Jogo Incrível!</h2>
+            <p>
+                Prepare-se para uma aventura emocionante cheia de desafios e diversão. 
+                Clique no botão abaixo para começar a jogar!
+            </p>
+        </section>
+        <button class="botao-jogar" id="btnJogar">Jogar Agora</button>
+    </main>
+
+    <footer>
+        &copy; 2024 Jogo Incrível. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        // Exemplo simples de script para o botão
+        document.getElementById('btnJogar').addEventListener('click', function() {
+            alert('Boa sorte no jogo!');
+            // Aqui você pode redirecionar para a página do jogo ou iniciar o jogo
+        });
+    </script>
+</body>
+</html>
