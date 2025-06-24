@@ -1,0 +1,37 @@
+// Script para manipular o início do jogo
+document.getElementById('startBtn').addEventListener('click', function() {
+    const introSection = document.querySelector('.intro');
+    const gameContainer = document.getElementById('gameContainer');
+
+    // Esconde a introdução
+    introSection.classList.add('hidden');
+
+    // Exibe o container do jogo
+    gameContainer.classList.remove('hidden');
+
+    // Aqui você pode iniciar seu jogo, por exemplo, chamando funções ou iniciando um canvas
+    iniciarJogo();
+});
+
+function iniciarJogo() {
+    // Aqui você pode colocar a lógica de inicialização do seu jogo
+    // Como exemplo, vamos criar um canvas simples
+
+    const container = document.getElementById('gameContainer');
+
+    // Cria um elemento canvas
+    const canvas = document.createElement('canvas');
+    canvas.width = 600;
+    canvas.height = 400;
+    canvas.style.border = '1px solid #fff';
+
+    container.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+
+    // Exemplo de desenho básico
+    ctx.fillStyle = '#00ffcc';
+    ctx.fillRect(50, 50, 100, 100);
+
+    // Aqui você pode expandir com a lógica do seu jogo
+}
